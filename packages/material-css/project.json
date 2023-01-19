@@ -1,0 +1,31 @@
+{
+  "name": "material-css",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/material-css/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "outputs": ["dist/packages/material-css"],
+      "options": {
+        "cwd": "packages/material-css",
+        "command": "gulp"
+      }
+    },
+    "publish": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node tools/scripts/publish.mjs material-css {args.ver} {args.tag}"
+      },
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/material-css",
+        "command": "stylelint src/**/*.css"
+      }
+    }
+  },
+  "tags": []
+}
