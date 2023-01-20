@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@open-analytics/material-css": ["packages/material-css/src/index.ts"]
+      "@open-analytics/material-css": ["packages/material-css/src/index.ts"],
+      "@open-analytics/material-react": ["packages/material-react/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
