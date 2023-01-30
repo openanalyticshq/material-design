@@ -1,5 +1,7 @@
 {
   "name": "@open-analytics/material-css",
   "version": "0.0.1",
-  "type": "commonjs"
+  "type": "commonjs",
+  "source": "src/index.js",
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
