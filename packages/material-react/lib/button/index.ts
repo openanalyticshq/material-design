@@ -1,4 +1,4 @@
-import OriginButton from './Button'
+import OriginButton from './button'
 // import Fab from './Fab'
 // import ExtendedFab from './ExtendedFab'
 
@@ -8,7 +8,7 @@ export type ButtonProps = typeof OriginButton
   // ExtendedFab: typeof ExtendedFab
 // }
 
-const Button = OriginButton as ButtonProps
+export const Button = OriginButton as ButtonProps
 // Button.Fab = Fab
 // Button.ExtendedFab = ExtendedFab
 
