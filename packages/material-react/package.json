@@ -1,8 +1,12 @@
 {
   "name": "@open-analytics/material-react",
   "version": "0.0.1",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@swc/helpers": "~0.4.11"
   },
-  "devDependencies": {}
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  }
 }
